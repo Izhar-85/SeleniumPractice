@@ -177,7 +177,7 @@ namespace Rest_Sharp_APITesting
             };
 
             // Use ReturnsAsync for async Execute() method
-            mockClient.Setup(client => client.ExecuteAsync(It.IsAny<RestRequest>(), Method.Get)).ReturnsAsync(mockResponse);
+           // mockClient.Setup(client => client.ExecuteAsync(It.IsAny<RestRequest>(), Method.Get)).ReturnsAsync(mockResponse);
 
             var result = await mockClient.Object.ExecuteAsync(mockRequest.Object, Method.Get);
 
